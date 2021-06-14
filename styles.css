@@ -1,0 +1,277 @@
+@import url('https://fonts.google.com/specimen/Spartan');
+.generic_class {
+    font-family: 'Spartan', sans-serif;
+}
+
+/*---- GLOBAL STYLES ----*/
+/*---- GLOBAL STYLES ----*/
+/*---- GLOBAL STYLES ----*/
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    font-family: 'Spartan', sans-serif;
+}
+
+
+h1 {
+    font-size: 3.5rem;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+section {
+    margin: 0 0 3.5rem 0;
+}
+
+
+/*---- VARIABLES ----*/
+
+:root {
+    /* PRIMARY */
+    --vd-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    /* NEUTRAL */
+    --dg-magenta: hsl(303, 10%, 53%);
+    --lg-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+/*---- CONTAINER ----*/
+/*---- CONTAINER ----*/
+/*---- CONTAINER ----*/
+
+.main-container-div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 2rem auto 0 auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-text { 
+    /* width: 30%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.top-text h1 {
+    width: 59.5%;
+    margin-bottom: 1rem;
+    color: var(--vd-magenta);
+}
+
+.top-text p {
+    width: 70%;
+    color: var(--dg-magenta);
+}
+
+.rating {
+    margin-top: 2rem;
+    /* margin-right: 5rem; */
+    /* width: 100%; */
+}
+
+.rate-div {
+    border: 1px solid transparent;
+    background-color: var(--lg-magenta);
+    border-radius: .5rem;
+    padding: 1rem 0 1rem 2rem;
+    width: 36rem;
+    position: relative;
+}
+
+.rating-2 {
+    margin-left: 4rem;
+}
+
+.rating-3 {
+    margin-left: 8rem;
+}
+
+.rate-div {
+    display: flex;
+    margin-bottom: 1rem;
+    /* margin-left: 4rem; */
+}
+
+.rate-div p img {
+    margin-right: .5rem;
+}
+
+.rate-div p {
+    margin-right: .75rem;
+    color: var(--vd-magenta);
+}
+
+
+
+.box-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+.box-1,
+.box-2 {
+    margin-right: 2rem;
+}
+
+.container-box {
+    background-color: var(--vd-magenta);
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.img-container {
+    display: flex;
+}
+
+.img-container p {
+    margin-top: .5rem;
+    color: var(--white);
+}
+
+.img-container p span {
+    display: block;
+    color: var(--soft-pink);
+}
+
+.img-container img {
+    border-radius: 50%;
+    width: 4rem;
+    margin-right: 2rem;  
+}
+
+.container-txt {
+    margin-top: 1rem;
+}
+
+.container-txt p {
+    color: var(--white);
+}
+
+.box-2 {
+    margin-top: 2%;
+}
+
+.box-3 {
+    margin-top: 4%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+
+/* ---- MEDIA QUERIES ---- */
+/* ---- MEDIA QUERIES ---- */
+/* ---- MEDIA QUERIES ---- */
+
+@media screen and (max-width: 800px) {
+    .top-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+        margin: 0 auto 0 auto;
+    }
+
+    .top-text {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .top-text h1 {
+        width: 100%;
+    }
+
+    .top-text p {
+        width: 100%;
+    }
+
+    .rating {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rating-2 {
+        margin-left: 0;
+    }
+
+    .rating-3 {
+        margin-left: 0;
+    }
+
+    .box-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-box {
+        width: 60%;
+    }
+
+    .box-1 {
+        margin-right: 0;
+    }
+
+    .box-2,
+    .box-3 {
+        margin-right: 0;
+        margin-top: 2%;
+    }
+}
+
+/* ---- MOBILE ---- */
+
+@media screen and (max-width: 400px) {
+
+    body {
+        width: 100%;
+        height: 150vh;
+    }
+    .main-container-div {
+        height: 100vh;
+        margin-top: 20rem;
+    }
+
+    .container-box {
+        height: 18rem;
+        width: 35rem;
+    }
+}
